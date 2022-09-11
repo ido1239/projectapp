@@ -9,10 +9,10 @@ export default class CountryClass {
 
     render() {
         let div = document.createElement("div");
-        div.className = "col-md-4 p-3 countries ";
+        div.className = "col-md-4 p-3 countries pics";
         document.querySelector(this.parent).append(div);
         div.innerHTML = `
-        <article class="row shadow h-100 "style="cursor: pointer ;">
+        <article class="pics shadow row h-100 "style="cursor: pointer; ">
           <div class="h-50 p-0">
               <img src="${this.img}" alt="${this.name}" class="overflow-hidden" height="100%" width="100%">
           </div>
