@@ -6,6 +6,7 @@ body {
     background-image: url(https://i.ibb.co/wKSJ6Pm/pexels-pixabay-220201.jpg);
     background-position: center;
     background-size: cover;
+   
 }
 .center{
     justify-content: center;
@@ -14,11 +15,14 @@ body {
     display: flex;
 }
 
+.box{
+border-radius: 12px;
+background: #EEEEEE;
+}
+
 header nav ul li a{
     text-decoration: none;
 }
-
-
 
 article{
     max-width: 800px ;
