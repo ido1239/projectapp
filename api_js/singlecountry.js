@@ -35,7 +35,7 @@ const doApi = async () => {
 
 const updateUi = (_single) => {
     let div = document.createElement("div");
-    div.className = "bg-white container col-md-12";
+    div.className = "container col-md-9 box";
     document.querySelector("#id_parent").append(div);
     const currencyArray = Object.values(_single.currencies);
     let currencies = `${currencyArray[0].name} ${currencyArray[0].symbol}`
