@@ -6,31 +6,22 @@
 }
 
 
-
-
 header{
 min-height: 54px;
 background-image: url(https://i.ibb.co/XtSWNCJ/pexels-nothing-ahead-6564832.jpg);
 background-position: center;
 background-size: cover;
-
-
 }
 header nav {
     /* border: 1px solid black; */
     /* display: flex; */
-    margin: auto !important;
-  
-    
+    margin: auto !important;   
 }
-
-
 
 header nav li{
     transition: 1000ms;
     padding: 3px !important;
-    cursor: pointer;
-    
+    cursor: pointer; 
 }
 
 header nav li{
@@ -42,13 +33,12 @@ header nav li{
     border: 3px solid rgba(0, 0, 0, 0.175);
     transition: 1000ms;
     background: white;
-    
 }
 
 header nav ul li:hover{
     transform: scale(1.,1.);
-   
     color: white !important;
+    background: rgba(135, 207, 235, 0.712);
     font-weight: 800;
     text-decoration: none;
 }
@@ -61,8 +51,6 @@ header nav ul li a{
     font-style: none;
 }
 
-
-
 header .logo h6{
     color: #0d6efd;
 }
@@ -70,13 +58,19 @@ header .logo h6{
   min-width: 226px;
   min-height: 232px;
 }
+.pics{
+  transition: 1000ms;
+}
+
+.pics:hover{
+  background: #eeee;
+  box-shadow: 5px 5px 15px 5px #000000;
+}
 
 main{
-  height: 1000px !important;
-  
+  height: 1000px !important;  
 }
   
-
 footer {
   background-image: url(https://i.ibb.co/sQbn0C0/pexels-monstera-7412086.jpg);
   background-position: center;
@@ -87,18 +81,12 @@ footer {
 
 footer .fa{
   transition: 1000ms;
-
 }
 
 footer .fa:hover{
   transform: scale(1.1);
   color: black;
-  
-
 }
-
-
-
 
 
 
@@ -139,11 +127,9 @@ header .th{
 }
 header .fra{
   width: 50%;
-
 }
 header .uk{
   width: 72%;
-  
 }
 
  header .logo{
@@ -153,22 +139,10 @@ header .uk{
  main{
   height: 1700px !important;
   margin-top: 32px;
-  
 }
  footer{
   font-size: 0.8em;
   text-align: center;
-  
- }
-
- footer .images{
- 
- }
-
- footer .details{
-  
-  
- 
  }
 
   }
