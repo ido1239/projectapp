@@ -49,7 +49,7 @@ const updateUi = (_single) => {
         </div>
         <div class=" col-md-5 ms-2 text-start">
             <h3>${_single.name.common} </h3>
-            <p>pop: <strong>${_single.population} </strong></p>
+            <p> Population:  ${(Math.floor((_single.population / 1000000) * 100) / 100).toLocaleString(2)}M</p>
             <p>region: <strong>${_single.region}</strong></p>
             <p>Language:<strong> ${languages}</strong></p>
             <p>Coins: <strong>${currencies} </strong></p>
@@ -75,24 +75,26 @@ const updateUi = (_single) => {
 </div>
 
 `
-    let borders = document.querySelector("#id_borders");
-    if(_single.borders? _single.borders: "")
-    _single.borders.forEach((item,i) =>{
-        let border = document.createElement("span");
+let borders = document.querySelector("#id_borders")
+if (_single.borders) {
+    _single.borders.forEach((item, i) => {
+        let border = document.createElement("span")
         border.className = "text-primary";
         border.style.cursor = "pointer";
-        // in the last border dont include ,
-        border.innerHTML = i !== _single.borders.length-1 ? `${item}, ` : `${item}`
+        border.innerHTML = i !== _single.borders.length - 1 ? `${item}, ` : `${item}`
         borders.append(border);
-        
-        border.addEventListener("click",()=>{
+        border.addEventListener("click", () => {
             doApiByCode(item);
         })
     })
-    let btn = div.querySelector(".home_btn");
-    btn.addEventListener("click", () => {
-        history.back();
-    })
+}
+else {
+    document.querySelector("#id_borders").innerHTML = "borders :<strong>None</strong>"
+}
+let btn = div.querySelector(".home_btn");
+btn.addEventListener("click", () => {
+    history.back();
+})
 }
 
 const showLoading = () => {

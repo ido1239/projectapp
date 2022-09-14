@@ -22,6 +22,8 @@ export default class CountryClass {
          </div>
         </article>
     `
+        
+
     div.addEventListener("click",()=>{
         window.open(`singlecountry.html?name=${this.name}`,"_self")
     })
